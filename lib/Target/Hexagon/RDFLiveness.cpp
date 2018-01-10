@@ -228,7 +228,7 @@ NodeList Liveness::getAllReachingDefs(RegisterRef RefRR,
 }
 
 
-static const RegisterSet NoRegs;
+static RegisterSet NoRegs;
 
 NodeList Liveness::getAllReachingDefs(NodeAddr<RefNode*> RefA) {
   return getAllReachingDefs(RefA.Addr->getRegRef(), RefA, false, NoRegs);
